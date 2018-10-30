@@ -48,15 +48,16 @@ films_hash
 end
 
 def print_movies(films_hash)
-  films_hash.each do |film_hash|
-  
-    puts film_hash["title"]
+  puts ""
+  puts "These are the movie(s) that the character is in: "
+  films_hash.each do |movies|
+    puts movies["title"]
   end
+
   # some iteration magic and puts out the movies in a nice list
 end
 
 def show_character_movies(character)
-  # binding.pry
   films_array = get_character_movies_from_api(character)
   print_movies(films_array)
 
