@@ -1,5 +1,6 @@
 def welcome
   # puts out a welcome message here!
+  puts "Welcome to Group 2's application!!!"
 end
 
 def get_character_from_user
